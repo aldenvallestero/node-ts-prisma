@@ -7,7 +7,12 @@ async function main() {
     data: {
       name: 'Alden',
       email: 'alden@prisma.io',
-      password: 'pass123'
+      password: 'pass123',
+      profile: {
+        create: {
+          role: 'Student'
+        }
+      }
     },
   })
   console.log('Created new user: ', newUser)
